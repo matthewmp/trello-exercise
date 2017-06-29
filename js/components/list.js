@@ -6,8 +6,8 @@ export default function List(props){
 	return (
 		<div className="list">
 			
-			{props.cards.map((card) => (
-				<Card text={card}  />
+			{props.cards.map((card, ind) => (
+				<Card text={card}  key={ind}/>
 			))}
 
 			<form onSubmit={props.onSubmit}>
